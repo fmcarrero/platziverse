@@ -1,0 +1,30 @@
+{
+  "name": "platziverse-db",
+  "version": "1.0.0",
+  "description": "A simple IoT platform-DB Module",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "SET DEBUG=platziverse:* && node setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmcarrero/platziverse.git"
+  },
+  "author": "FranklinCarrero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fmcarrero/platziverse/issues"
+  },
+  "homepage": "https://github.com/fmcarrero/platziverse#readme",
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "debug": "^4.0.0",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.38.0"
+  }
+}
