@@ -1,0 +1,33 @@
+{
+  "name": "platziverse-mqtt",
+  "version": "1.0.0",
+  "description": "A simple Iot, MQTT-server",
+  "main": "server.js",
+  "scripts": {
+    "lint": "standard",
+    "start": "NODE_ENV=production && node server.js",
+    "start-dev": " SET  DEBUG=platziverse:* && nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmcarrero/platziverse.git"
+  },
+  "author": "FranklinCarrero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fmcarrero/platziverse/issues"
+  },
+  "homepage": "https://github.com/fmcarrero/platziverse#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^4.0.1",
+    "mosca": "^2.8.3",
+    "platziverse-db": "file:../platziverse-db",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "standard": "^12.0.1"
+  }
+}
