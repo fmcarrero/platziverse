@@ -78,7 +78,7 @@ server.on('published', async (packet, client) => {
         // notificar que el agente fue conectado
         if (!clients.get(client.id)) {
           clients.set(client.id, agent)
-          server.publish = ({
+          server.publish  ({
             topic: 'agent/connected',
             payload: JSON.stringify({
               agent: {
