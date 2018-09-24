@@ -1,0 +1,38 @@
+{
+  "name": "platziverse-api",
+  "version": "1.0.0",
+  "description": "a simple IoT Api",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "lint": "standard",
+    "start": "NODE_ENV=production && node server.js",
+    "start-dev": " SET  DEBUG=platziverse:* && nodemon server.js",
+    "test": "SET DEBUG=platziverse:* && ava tests/ --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmcarrero/platziverse.git"
+  },
+  "author": "Franklin Carrero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fmcarrero/platziverse/issues"
+  },
+  "homepage": "https://github.com/fmcarrero/platziverse#readme",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "nodemon": "^1.18.4",
+    "proxyquire": "^2.1.0",
+    "sinon": "^6.3.4",
+    "standard": "^12.0.1",
+    "supertest": "^3.3.0"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^4.0.1",
+    "express": "^4.16.3",
+    "express-asyncify": "^1.0.0",
+    "platziverse-db": "file:../platziverse-db"
+  }
+}
